@@ -1,0 +1,5 @@
+@use 'abstract/colours';
+
+.body{
+    background: colours.$background;
+}

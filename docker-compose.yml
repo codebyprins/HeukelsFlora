@@ -1,0 +1,47 @@
+version: '3.9'
+
+#services
+services:
+    # PHP FPM Service
+  php:
+    image: wodby/php:latest
+    volumes:
+      - './:/var/www/html'
+    depends_on:
+      - mariadb
+
+    # Nginx Service
+  nginx:
+    image: nginx:latest
+    ports:
+      - 88:80
+    links:
+      - 'php'
+    volumes:
+      - './:/var/www/html'
+      - './docker/nginx:/etc/nginx/conf.d'
+    depends_on:
+      - php
+
+    # MariaDB Service
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_DATABASE: heukelsflora
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: Alp@c@W00l
+      MYSQL_ROOT_PASSWORD: Adm1n0nly
+    ports:
+      - 3308:3306
+
+    # phpmyadmin in an external image
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: root
+      PMA_PASSWORD: Adm1n0nly
+    ports:
+      - "1088:80"
+  
+  
