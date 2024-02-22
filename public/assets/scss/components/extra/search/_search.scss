@@ -1,0 +1,38 @@
+@use '../../../abstract/colours';
+
+.extra__search{
+    justify-content: space-evenly;
+}
+.search__h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Fira Sans", sans-serif;
+}
+.search__icon{
+    font-size: 8rem;
+    color: colours.$highlightText; 
+}
+.search__search{
+    width: 30rem;
+    height: 4rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.search__submit{
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: colours.$button;
+    font-size: 2rem;
+    color: colours.$highlightText;
+    border-radius: 2.5rem;
+}
+.search__submit:hover{
+    background: colours.$highlightText;
+    color: colours.$button;
+}

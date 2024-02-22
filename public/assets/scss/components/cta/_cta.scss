@@ -9,20 +9,21 @@
 }
 .cta__img{
     width: 100%;
-    height: 80rem;
+    height: 70rem;
     position: absolute;
     object-fit: cover;
 }
 .cta__textBlock{
     width: 50rem;
     height: 45rem;
-    background: colours.$ctaTextBlock;
-    margin-top: 20rem;
+    background: colours.$textBlock;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 4rem;
+    border-radius: 1.5rem;
 }
 .cta__h2{
     width: 45rem;
@@ -50,7 +51,12 @@
     justify-content: center;
     align-items: center;
     border: none;
-    background: colours.$ctaButton;
+    background: colours.$button;
     font-size: 2rem;
-    color: white;
+    color: colours.$highlightText;
+    border-radius: 2.5rem;
+}
+.cta__button:hover{
+    background: colours.$highlightText;
+    color: colours.$button;
 }

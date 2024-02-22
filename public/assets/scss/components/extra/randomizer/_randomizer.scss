@@ -1,0 +1,33 @@
+@use '../../../abstract/colours';
+.extra__randomizer{
+    justify-content: space-evenly;
+}
+.randomizer__h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Fira Sans", sans-serif;
+}
+.randomizer__img{
+    width: 20rem;
+    height: 20rem;
+    background: darkslategrey;
+}
+.randomizer__button{
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: colours.$button;
+    font-size: 2rem;
+    color: colours.$highlightText;
+    border-radius: 2.5rem;
+}
+.randomizer__button:hover{
+    background: colours.$highlightText;
+    color: colours.$button;
+}
