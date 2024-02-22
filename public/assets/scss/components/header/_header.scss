@@ -9,6 +9,9 @@
     align-items: center;
     position: fixed;
     z-index: 1;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .header__logo{
@@ -16,7 +19,7 @@
     color: colours.$headerAccents;
 }
 .header__title{
-    font-size: 3rem;
+    font-size: 4rem;
     color: colours.$headerAccents;
 }
 .header__hamburgerMenu{
