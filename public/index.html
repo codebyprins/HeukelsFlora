@@ -12,15 +12,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body class="body">
-        <div class="sidebar"></div>
+        <div id="js--sidebar" class="sidebar">
+            <nav class="sidebar__nav">
+                <ul class="sidebar__ul">
+                    <li class="sidebar__li"><a href="index.html" class="sidebar__a">Home</a></li>
+                    <li class="sidebar__li"><a href="determinatie.html" class="sidebar__a">Determinatie Tool</a></li>
+                    <li class="sidebar__li">Zoek een plant</li>
+                    <li class="sidebar__li">Heukels Flora van Nederland</li>
+                    <li class="sidebar__li">Developer</li>
+                </ul>
+            </nav>
+        </div>
         <img src="assets/img/grass.jpg" alt="" class="cta__img">
         <header class="header">
             <i class="fa-brands fa-pagelines header__logo"></i>
             <h1 class="header__title">Heukel's Flora van Nederland</h1>
-            <div class="header__hamburgerMenu">
+            <div id="js--hamburgerIcon" class="header__hamburgerMenu">
                 <div class="hamburgerMenu hamburgerMenu__top"></div>
                 <div class="hamburgerMenu hamburgerMenu__mid"></div>
                 <div class="hamburgerMenu hamburgerMenu__bot"></div>
+                <button id="js--hamburger" class="hamburgerMenu__trigger"></button>
             </div>
         </header>
         <section class="cta">
@@ -43,6 +54,5 @@
                 <input class="search__submit" type="submit" value="Zoeken">
             </div>
         </section>
-        
     </body>
 </html>

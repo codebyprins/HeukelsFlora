@@ -29,11 +29,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem
+    gap: 0.5rem;
+    position: relative;
 }
 .hamburgerMenu{
     width: 4rem;
     height: 0.75rem;
     border-radius: 50%;
     background: colours.$headerAccents;
+    transform: rotate(0deg);
+}
+.hamburgerMenu__trigger{
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    background: transparent;
 }
