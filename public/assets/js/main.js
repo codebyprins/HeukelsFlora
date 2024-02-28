@@ -23,5 +23,6 @@ hamburger.onclick = function(){
     - database
     - queries database
     - standard page to put a plant in when searching for or outcome test
+    - mixins
     (To-Do on multiple pages)
 */
