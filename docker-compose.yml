@@ -2,7 +2,7 @@ version: '3.9'
 
 #services
 services:
-    # PHP FPM Service
+  # PHP FPM Service
   php:
     image: wodby/php:latest
     volumes:
@@ -10,7 +10,7 @@ services:
     depends_on:
       - mariadb
 
-    # Nginx Service
+  # Nginx Service
   nginx:
     image: nginx:latest
     ports:
@@ -22,8 +22,8 @@ services:
       - './docker/nginx:/etc/nginx/conf.d'
     depends_on:
       - php
-
-    # MariaDB Service
+  
+  # MariaDB Service
   mariadb:
     image: mariadb:latest
     environment:
@@ -34,7 +34,7 @@ services:
     ports:
       - 3308:3306
 
-    # phpmyadmin in an external image
+  # phpmyadmin in an external image
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
@@ -43,5 +43,3 @@ services:
       PMA_PASSWORD: Adm1n0nly
     ports:
       - "1088:80"
-  
-  
