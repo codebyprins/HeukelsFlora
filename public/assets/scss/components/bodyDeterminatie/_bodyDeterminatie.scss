@@ -1,5 +1,5 @@
 @use '../../abstract/colours';
-.bpdy__determinatie{
+.body__determinatie{
     width: 100%;
     height: 100vh;
     position: relative;
@@ -21,7 +21,7 @@
 }
 .determinatie__tile{
     width: 80rem;
-    height: 60rem;
+    height: 50rem;
     background: colours.$background;
     display: flex;
     align-items: center;

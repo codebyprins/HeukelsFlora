@@ -47,16 +47,27 @@
 .cta__button{
     width: 15rem;
     height: 8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: none;
     background: colours.$button;
-    font-size: 2rem;
-    color: colours.$highlightText;
+    
     border-radius: 2.5rem;
 }
 .cta__button:hover{
     background: colours.$highlightText;
+}
+.cta__a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: colours.$highlightText;
+}
+.cta__a:visited{
+    color: colours.$highlightText;
+}
+.cta__a:hover{
     color: colours.$button;
 }
